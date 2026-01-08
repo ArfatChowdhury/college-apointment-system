@@ -25,3 +25,12 @@ async function run() {
 }
 
 run().catch(console.dir);
+
+
+app.get('/', (req, res) => {
+    res.send('College Appointment System Server is Running');
+});
+
+app.listen(port, () => {
+    console.log(`College Appointment System Server is running on port: ${port}`);
+});
